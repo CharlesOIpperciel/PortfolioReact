@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website! This project showcases my work, skills, and experiences as a software developer.
 
-Link: https://charlesoipperciel.github.io/new_portfolio_2.0/
+Link: https://CharlesOIpperciel.github.io/PortfolioReact/
 
 ## 🚀 Features
 
