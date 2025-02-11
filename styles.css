@@ -1,0 +1,733 @@
+/*the grey background */
+.geometric-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Images/GeometricBackgroundf.png');
+    animation: translateYBackground 50s linear infinite;
+}
+
+@keyframes translateYBackground {
+    from {
+        background-position: 0 0; /* Start position */
+    }
+    to {
+        background-position: 0 100%; /* End position */
+    }
+}
+
+/*White container*/
+.container {
+    border-radius: 5px;
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar styles*/
+nav {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+nav h1 {
+    margin: 15px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 1px;
+    transition: 0.3s ease;
+    background-color: black;
+    font-family: 'Copperplate', sans-serif;
+}
+
+nav ul li:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+
+h1 {
+    font-family: 'Copperplate', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Copperplate', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+h3 {
+    font-family: 'Copperplate', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.open-for-work {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Copperplate', sans-serif;
+    font-size: 18px;
+    border-bottom: 2px solid #333;
+}
+
+
+.photo-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition: transform 1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+}
+
+.about-section .icons {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.about-section .icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.about-section .icons a:hover {
+    transform: scale(1.1);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition: transform 1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+}
+
+.about-section .icons {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.about-section .icons-MEDomicsLab {
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+.about-section .icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.about-section .icons a:hover {
+    transform: scale(1.1);
+}
+
+.icons-section img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+
+}
+
+.icons-section-MEDomicsLab img {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+
+}
+
+/*Project rectangles*/
+.project {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    float: left;
+    border: 2px solid black;
+    transition: transform 0.3s;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.projects-section {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project-find-the-pair {
+    background-image: url('./Projects/FindThePair/ProjectImages/Picture.png');
+    background-size: 110%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-mood-meter {
+    background-image: url('./Images/MoodMeter.png');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-insulin-calculator {
+    background-image: url('./Projects/InsulinCalculator/ProjectImages/output.png');
+    background-size: 140%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-leetcode {
+    background-image: url('./Projects/LeetCode/ProjectImages/CompressJPEG.online_500x500-image.png');
+    background-size: 140%;
+    background-clip: content-box;
+    background-position: center;
+
+}
+
+.project-sudoku-solver {
+    background-image: url('./Images/SudokuSolver.jpg');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-pythoncasino {
+    background-image: url('./Projects/PythonCasino/ProjectImages/CompressJPEG.online_500x500-image.jpeg');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-pythonscripts {
+    background-image: url('./Projects/PythonScripts/ProjectImages/CompressJPEG.online_500x500-image.png');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-MEDomicsLab {
+    background-image: url('./Projects/MEDomicsLab/ProjectImages/medomicslab.png');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-Vitopia {
+    background-image: url('./Projects/Vitopia/ProjectImages/VitopiaLogo.jpg');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-CodedKingdoms {
+    background-image: url('./Projects/CodedKingdoms/ProjectImages/codedkingdoms.png');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project-StudyHive {
+    background-image: url('./Projects/StudyHive/ProjectImages/StudyHiveLogo2.png');
+    background-size: 100%;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.project {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+}
+
+.project:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Black rectangle on projects hover animation*/
+.project::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.5s ease, bottom 0.5s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.project:hover::before {
+    bottom: 0;
+    height: 50%;
+}
+
+.project:hover .h3-container {
+    position: relative;
+    z-index: 2;
+}
+
+.h3-container {
+    position: relative;
+    transition: transform 0.45s ease-in-out;
+    opacity: 0;
+}
+
+.project:hover .h3-container {
+    opacity: 1;
+    transform: translateY(-35px);
+}
+
+/*Resume Button */
+.resume-btn {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Copperplate', sans-serif;
+    text-decoration: none;
+}
+
+.resume-btn:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.resume-btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.project-button {
+    margin-top: 10px;
+    background-color: lightgrey;
+    font-family: 'Copperplate', sans-serif;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.project-button-info {
+    margin-top: 10px;
+    background-color: lightgrey;
+    font-family: 'Copperplate', sans-serif;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.live-demo {
+    margin-top: 10px;
+    background-color: lightgrey;
+    font-family: 'Copperplate', sans-serif;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.live-demo:hover {
+    transform: scale(1.05);
+    background-color: lightgreen;
+    color: black;
+}
+
+.project-button.in-development:hover {
+    transform: scale(1.05);
+    background-color: lightcoral;
+    color: black;
+}
+
+.project-button:hover {
+    transform: scale(1.05);
+    background-color: dimgrey;
+    color: white;
+}
+
+.project-button-info:hover {
+    transform: scale(1.05);
+    background-color: lightyellow;
+    color: black;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+    height: 100%;
+    border: 2px black solid;
+}
+
+/*About me text styles*/
+.text-aboutme-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about-me-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Copperplate', sans-serif;
+    text-align: justify;
+}
+
+.about-me-text:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin: 20px auto;
+}
+
+.about-me-text:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin: 20px auto;
+}
+
+.about-me-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Copperplate', sans-serif;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+.about-me-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-me-list li {
+    margin-bottom: 20px;
+    font-family: 'Copperplate', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: lightgrey;
+}
+
+.about-me-list li:hover {
+    transform: scale(1.05);
+}
+
+.about-me-list li img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.about-me-list li span {
+    font-size: 16px;
+    color: #333;
+}
+
+.about-me-list-MEDomicsLab {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-me-list-MEDomicsLab li {
+    margin-bottom: 20px;
+    font-family: 'Copperplate', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: lightyellow;
+}
+
+.about-me-list-MEDomicsLab li:hover {
+    transform: scale(1.05);
+}
+
+.about-me-list-MEDomicsLab li img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.about-me-list-MEDomicsLab li span {
+    font-size: 16px;
+    color: #333;
+}
+
+/*Different media queries*/
+@media (max-width: 1200px) {
+    .container {
+        max-width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 600px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project {
+        width: 150px;
+        height: 100px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 600px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project {
+        width: 150px;
+        height: 100px;
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 500px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project {
+        width: 200px;
+        height: 100px;
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project {
+        width: 200px;
+        height: 100px;
+        margin: 20px 0 20px 45px;
+        position: relative;
+    }
+
+    .resume-btn {
+        padding: 0.2em 0.6em;
+    }
+}
+
+
+

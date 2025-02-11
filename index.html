@@ -1,21 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" href="src/index.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio2.0</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+<!-- Navigation Section -->
+<nav>
+    <h1>My Portfolio</h1>
+    <ul>
+        <li><a href="#">Projects</a></li>
+        <li><a href="./about.html">About me</a></li>
+    </ul>
+</nav>
 
+<!-- Open for Work Message -->
+<div class="open-for-work">
+    Open for full-time work starting at the end of April 2025
+</div>
+
+<!-- Main Content Section -->
+<div class="geometric-background">
+    <div class="container">
+        <!-- About Section -->
+        <div class="photo-icons-container">
+            <div class="about-section">
+                <!-- Image Section -->
+                <div class="image-section">
+                    <img src="Images/LinkedInPhoto.jpg" alt="Your Picture">
+                </div>
+                <!-- Icons Section -->
+                <div class="icons-section">
+                    <div class="icons">
+                        <!-- Github Icon -->
+                        <a href="https://github.com/CharlesOIpperciel" target="_blank">
+                            <img src="./Images/assets/github.png" alt="My Github profile" class="icon"/>
+                        </a>
+                        <!-- LinkedIn Icon -->
+                        <a href="https://www.linkedin.com/in/coipp/" target="_blank">
+                            <img src="./Images/assets/linkedin.png" alt="My LinkedIn profile" class="icon"/>
+                        </a>
+                        <!--Mail me -->
+                        <a href="mailto:charlesolivieripperciel@gmail.com" target="_blank">
+                            <img src="./Images/assets/email.png" alt="Email Me" class="icon"/>
+                        </a>
+                    </div>
+                    <!-- Resume Button -->
+                    <a href="./Resumes/Resume_English.pdf" class="resume-btn" target="_blank">CV (eng.)</a>
+                    <a href="./Resumes/Resume_French.pdf" class="resume-btn" target="_blank">CV (fr.)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Projects Section -->
+        <h2 class="my-projects-text">My Projects and Internships</h2>
+
+        <!-- Project: Vitopia -->
+        <div class="project project-Vitopia">
+            <button class="project-button in-development" disabled>In development</button>
+            <div class="h3-container">
+                <h3>Vitopia</h3>
+            </div>
+            <div class="tooltip">Visual Simulations of Computer-Biological Entities (Ongoing 270-hour project)</div>
+        </div>
+
+        <!-- Project: MEDomicsLab -->
+        <div class="project project-MEDomicsLab">
+            <button class="project-button" onclick="window.open('https://github.com/MEDomics-UdeS/MEDomicsLab')">
+                Github
+            </button>
+            <button class="project-button-info" onclick="window.location.href='Projects/MEDomicsLab/MEDomicsLabInfo.html'">
+                Info
+            </button>
+            <div class="h3-container">
+                <h3>MEDomicsLab</h3>
+            </div>
+            <div class="tooltip">INTERNSHIP: Open-source platform that uses AI and machine learning tools for better healthcare decision-making.</div>
+        </div>
+
+        <!-- Project: Coded Kingdom -->
+        <div class="project project-CodedKingdoms">
+            <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/CodedKingdom')">
+                Github
+            </button>
+            <button class="live-demo" onclick="window.open('https://github.com/xnubbeh/CodedKingdom/releases/tag/prototype')">Try</button>
+            <div class="h3-container">
+                <h3>Coded Kingdom</h3>
+            </div>
+            <div class="tooltip">Game developed using the Godot engine and Python to help people learn the basics of coding.</div>
+        </div>
+
+        <!-- Project: Insulin Calculator -->
+        <div class="project project-insulin-calculator">
+            <a href="Projects/InsulinCalculator/index.html" target="_blank">
+                <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/InsulinCalculator')">
+                    Github
+                </button>
+                <button class="project-button-info" onclick="window.location.href='Projects/InsulinCalculator/InsulinCalculatorInfo.html'">
+                    Info
+                </button>
+                <button class="live-demo" onclick="window.open('https://insulin-calculator-3fc5c.web.app')">Try</button>
+            </a>
+            <div class="h3-container">
+                <h3>Insulin Calc.</h3>
+            </div>
+            <div class="tooltip">Insulin dosage calculator for newly diagnosed patient.</div>
+        </div>
+
+        <!-- Project: LeetCode solutions -->
+        <div class="project project-leetcode">
+            <button class="project-button"
+                    onclick="window.open('https://github.com/CharlesOIpperciel/LeetCodeAnswers')">Github
+            </button>
+            <div class="h3-container">
+                <h3>LeetCode</h3>
+            </div>
+            <div class="tooltip">My solutions to LeetCode problems in Python.</div>
+        </div>
+
+        <!-- Project: Find The Pair -->
+        <div class="project project-find-the-pair">
+            <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/FindThePair')">
+                Github
+            </button>
+            <a href="Projects/FindThePair/index.html" target="_blank">
+                <button class="live-demo">Try</button>
+            </a>
+            <div class="h3-container">
+                <h3>Find The Pair</h3>
+            </div>
+            <div class="tooltip">Memory game made in Python. Demo made in HTML/CSS and Javascript.</div>
+        </div>
+
+        <!-- Project: Mood Meter -->
+        <div class="project project-mood-meter">
+            <a href="Projects/MoodMeter/index.html" target="_blank">
+                <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/MoodMeter')">
+                    Github
+                </button>
+                <button class="project-button-info" onclick="window.location.href='Projects/MoodMeter/MoodMeterInfo.html'">
+                    Info
+                </button>
+                <button class="live-demo">Try</button>
+            </a>
+            <div class="h3-container">
+                <h3>Mood Meter</h3>
+            </div>
+            <div class="tooltip">Simple application that allows children with chronic pain to express their emotional states on a scale of 0 to 10.</div>
+        </div>
+
+        <!-- Project: Sudoku Solver -->
+        <div class="project project-sudoku-solver">
+            <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/SudokuSolver')">
+                Github
+            </button>
+            <a href="Projects/SudokuSolver/index.html" target="_blank">
+                <button class="live-demo">Try</button>
+            </a>
+            <div class="h3-container">
+                <h3>Sudoku Solver</h3>
+            </div>
+            <div class="tooltip">Sudoku solver made in Python using a backtracking algorithm.</div>
+        </div>
+        <!-- Project: Python casino -->
+        <div class="project project-pythoncasino">
+            <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/PythonCasino')">
+                Github
+            </button>
+            <div class="h3-container">
+                <h3>Python Casino</h3>
+            </div>
+            <div class="tooltip">Simple casino game made in Python.</div>
+        </div>
+        <!-- Project: Python Scripts -->
+        <div class="project project-pythonscripts">
+            <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/PythonScripts')">
+                Github
+            </button>
+            <div class="h3-container">
+                <h3>Python Scripts</h3>
+            </div>
+            <div class="tooltip">Various Python scripts for automating daily desktop tasks.</div>
+        </div>
+        <!-- Project: StudyHive -->
+        <!--
+        <div class="project project-StudyHive">
+            <button class="project-button" onclick="window.open('https://github.com/CharlesOIpperciel/StudyHive')">
+                Github
+            </button>
+            <button class="project-button-info" onclick="window.location.href='Projects/StudyHive/StudyHiveInfo.html'">
+                Info
+            </button>
+            <div class="h3-container">
+                <h3>StudyHive</h3>
+            </div>
+            <div class="tooltip">Application designed to help students organize and manage their schoolwork efficiently by classifying documents based on school classes.</div>
+        </div> -->
+    </div>
+</div>
+<div class="footer-container">
+    <footer class="footer">
+        <p>© 2024 Charles-Olivier Ipperciel. All rights reserved.</p>
+    </footer>
+</div>
+</body>
 </html>

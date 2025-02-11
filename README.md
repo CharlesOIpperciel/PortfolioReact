@@ -1,16 +1,16 @@
-# 🌟 My Portfolio 2.0 🌟
+# Portfolio Website 1.0 👨‍💻
 
-Welcome to my portfolio website! This project showcases my work, skills, and experiences as a software developer.
+### Link: https://charlesoipperciel.github.io/
 
-Link: https://charlesoipperciel.github.io/new_portfolio_2.0/
+<p align="justify">
+    Welcome to my portfolio website! As I'm about to graduate from my CS bachelor in April at Université de Sherbrooke, this space serves as a platform for me to showcase my skills, projects, and experiences in the field of technology. Whether you're a recruiter, potential collaborator, or simply curious about my work, I'm excited to share my journey with you.
+</p>
 
-## 🚀 Features
+## Contact 🤝
+<p align="justify">
+This website was entirely coded by me with vanilla HTML/CSS and Javascript. If you have any questions, opportunities for collaboration, or just want to connect, I'd love to hear from you! You can reach me through the following channels:
 
-- **Interactive Timeline**: View my career timeline with detailed descriptions of my roles and projects.
-- **Project Portfolio**: Explore the projects I've worked on, complete with images, tech stack, and links.
-- **Contact Form**: Get in touch with me directly through the contact form.
-## 🛠️ Technologies Used
+- **Email:** ippc2001@usherbrooke.ca
+- **LinkedIn:** [Connect with me](https://www.linkedin.com/in/coipp/)
 
-- **React**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Vite**: A fast build tool for modern web projects.
+</p>
