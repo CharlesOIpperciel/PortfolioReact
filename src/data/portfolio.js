@@ -6,7 +6,7 @@ export default [
         link: "https://github.com/MEDomics-UdeS/MEDomicsLab",
     },
     {
-        title: "Vitopia",
+        title: "Vitopia - 2D AI Simulation",
         imgUrl: "assets/VitopiaLogo.jpg",
         stack: ["C++", "OpenGL"],
         link: "In development",
