@@ -14,26 +14,11 @@ function Timeline() {
             year={item.year}
             type={item.type}
             title={item.title}
+            company={item.company}
             duration={item.duration}
             details={item.details}
           />
         ))}
-        <div className="flex justify-center space-x-4 mt-10">
-          <a 
-            href='assets/Resume_French.pdf' 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="bg-blue-500 font-semibold text-white px-6 py-2 rounded hover:bg-blue-700 transition transform transition duration-300 hover:scale-102">
-            French CV
-          </a>
-          <a 
-            href='assets/Resume_English.pdf' 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="bg-green-500 font-semibold text-white px-6 py-2 rounded hover:bg-green-700 transition transform transition duration-300 hover:scale-102">
-            English CV
-          </a>
-        </div>
       </div>
     </div>
   );
