@@ -38,7 +38,7 @@ function MouseFollower() {
         left: position.x,
         width: '10px',
         height: '10px',
-        backgroundColor: 'lightblue',
+        backgroundColor: 'red',
         borderRadius: '50%',
         pointerEvents: 'none',
         transform: 'translate(-50%, -50%)',

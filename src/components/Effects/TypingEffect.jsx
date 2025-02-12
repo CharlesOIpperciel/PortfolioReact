@@ -4,6 +4,7 @@ const TypingEffect = ({ text, speed = 50 }) => {
   const [displayedText, setDisplayedText] = useState('');
 
   useEffect(() => {
+    setDisplayedText('');
     let index = 0;
     const interval = setInterval(() => {
       setDisplayedText((prev) => prev + text.charAt(index));
