@@ -4,7 +4,7 @@ export default [
     type: "Part-time 💻",
     title: "Software Developer",
     company: "UdS",
-    duration: "7 months (Ongoing)",
+    duration: "6 months (Ongoing)",
     details:
       "Development of MEDomicsLab. Transitioned from a Summer 2024 internship into a part-time position. Still focusing on continuous improvement and updates to the application, alongside reviewing pull requests.",
   },
