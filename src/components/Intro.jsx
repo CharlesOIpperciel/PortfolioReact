@@ -1,5 +1,6 @@
 import React from "react";
 import TypingEffect from "./Effects/TypingEffect";
+import "../styles/tailwind.css"
 
 function Intro() {
   return (
@@ -8,13 +9,13 @@ function Intro() {
         <img 
           src="assets/LinkedInPhoto.jpg" 
           alt="Charles-Olivier Ipperciel" 
-          className="w-48 h-48 rounded-full mb-4 transform transition-transform duration-500 hover:scale-110"
+          className="w-48 h-48 rounded-full mb-4 transform transition-transform duration-500 hover:scale-110 bounce-in-top"
         />
         <h1 className="text-4xl md:text-6xl mb-1 md:mb-3 font-bold">
           Hi 👋, I'm Charles-Olivier Ipperciel
         </h1>
         <p className="text-base md:text-xl mb-3 font-medium">
-          <TypingEffect text="Sooftware Developer 🧑‍💻" />
+          <TypingEffect text="Sooftware Developer" />
         </p>
         <p className="text-sm max-w-xl mb-6 font-bold text-justify">
           Hey! I'm a software developer nearing the completion of my Bachelor's
@@ -30,14 +31,14 @@ function Intro() {
           href='assets/Resume_French.pdf' 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="bg-blue-400 font-semibold text-black px-6 py-2 rounded hover:bg-blue-800 hover:text-white transition transform transition duration-300 hover:scale-102">
+          className="bg-blue-300 font-semibold text-black px-6 py-2 rounded hover:bg-blue-400 hover:text-white transition transform transition duration-300 hover:scale-102 border-2 border-stone-600 bounce-in-left">
           French CV
         </a>
         <a 
           href='assets/Resume_English.pdf' 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="bg-green-400 font-semibold text-black px-6 py-2 rounded hover:bg-green-800 hover:text-white transition transform transition duration-300 hover:scale-102">
+          className="bg-green-300 font-semibold text-black px-6 py-2 rounded hover:bg-green-400 hover:text-white transition transform transition duration-300 hover:scale-102 border-2 border-stone-600 bounce-in-right">
           English CV
         </a>
       </div>

@@ -31,7 +31,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
               target="_blank"
               rel="noopener noreferrer"
               title="Click to see the code"
-              className="inline-block mt-4 px-4 py-2 bg-white text-white font-semibold rounded-md hover:bg-green-200 transition duration-300"
+              className="inline-block mt-4 px-4 py-2 bg-white text-white font-semibold rounded-md hover:bg-green-200 transition duration-300 border-2 border-stone-900"
             >
               <img
                 src="assets/github-mark.png"
@@ -40,7 +40,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
               />
             </a>
           ) : (
-            <span className="inline-block mt-4 px-4 py-2 bg-red-400 text-white font-semibold rounded-md">
+            <span className="inline-block mt-4 px-2 py-2 bg-red-400 text-white font-semibold rounded-md border-2 border-dashed border-stone-900">
               In Development
             </span>
           )}

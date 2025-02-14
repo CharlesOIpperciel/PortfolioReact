@@ -1,8 +1,8 @@
 export default [
   {
     year: "Today",
-    type: "Work",
-    title: "Software Developer (Research assistant)",
+    type: "Part-time 💻",
+    title: "Software Developer",
     company: "UdS",
     duration: "7 months (Ongoing)",
     details:
@@ -10,7 +10,7 @@ export default [
   },
   {
     year: "Summer 2024",
-    type: "Work",
+    type: "Internship 🎒",
     title: "Software Developer",
     company: "UdS",
     duration: "4 months",
@@ -19,7 +19,7 @@ export default [
   },
   {
     year: "Fall 2023",
-    type: "Work",
+    type: "Internship 🎒",
     title: "Backend Developer",
     company: "Sherweb",
     duration: "4 months",
@@ -28,16 +28,16 @@ export default [
   },
   {
     year: "Winter 2023",
-    type: "Work",
+    type: "Internship 🎒",
     title: "Software Developer",
-    company: "Qwatro inc.",
+    company: "Qwatro",
     duration: "4 months",
     details:
       "Internship at Qwatro inc. Developed an application to track on-site workers' hours and assisted in the necessary steps for acquiring an appropriate ERP system.",
   },
   {
     year: "2022",
-    type: "Education",
+    type: "Education 🎓",
     title: "Bachelor's Degree in Computer Science",
     company: "UdS",
     duration: "3 years",
@@ -46,7 +46,7 @@ export default [
   },
   {
     year: "2019",
-    type: "Education",
+    type: "Education 🎓",
     title: "Major in Business Administration",
     company: "HEC Montreal",
     duration: "2 years",

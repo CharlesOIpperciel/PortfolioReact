@@ -3,7 +3,9 @@ import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 function TimelineItem({ year, type, title, company, duration, details }) {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const typeColor = type === "Work" ? "bg-orange-500" : "bg-blue-500";
+  const typeColor = type === "Part-time 💻" ? "bg-orange-500" : 
+                    type === "Education 🎓" ? "bg-blue-500" : 
+                    type === "Internship 🎒" ? "bg-green-500" : "" ;
 
   return (
     <ol ref={ref} className={`flex flex-col md:flex-row relative border-l border-stone-200 ${isVisible ? 'animate-slideIn' : ''}`}>
@@ -16,11 +18,11 @@ function TimelineItem({ year, type, title, company, duration, details }) {
           <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-900 rounded-md">
             {year}
           </span>
-          <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-500 rounded-md">
+          <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-400 rounded-md">
             {company}
           </span>
           <h3 className="text-lg font-semibold text-stone-900">{title}</h3>
-          <div className="my-1 text-sm font-normal leading-non text-stone-400">
+          <div className="my-1 text-sm font-normal font-semibold leading-non text-stone-600">
             {duration}
           </div>
         </p>
