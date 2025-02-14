@@ -40,7 +40,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
               />
             </a>
           ) : (
-            <span className="inline-block mt-4 px-2 py-2 bg-red-400 text-white font-semibold rounded-md border-2 border-dashed border-stone-900">
+            <span className="inline-block mt-4 px-4 py-2 bg-red-400 text-white font-semibold rounded-md border-2 border-stone-900 border-dashed">
               In Development
             </span>
           )}
