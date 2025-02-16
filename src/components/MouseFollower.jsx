@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import "../styles/tailwind.css"
 
 function MouseFollower() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -19,8 +20,8 @@ function MouseFollower() {
   useEffect(() => {
     const updatePosition = () => {
       setPosition((prevPosition) => ({
-        x: prevPosition.x + (targetPosition.x - prevPosition.x) * 0.1,
-        y: prevPosition.y + (targetPosition.y - prevPosition.y) * 0.1,
+        x: prevPosition.x + (targetPosition.x - prevPosition.x) * 0.05,
+        y: prevPosition.y + (targetPosition.y - prevPosition.y) * 0.05,
       }));
       animationRef.current = requestAnimationFrame(updatePosition);
     };
@@ -32,13 +33,13 @@ function MouseFollower() {
 
   return (
     <div
+      className="mouse-follower"
       style={{
         position: 'fixed',
         top: position.y,
         left: position.x,
         width: '10px',
         height: '10px',
-        backgroundColor: 'red',
         borderRadius: '50%',
         pointerEvents: 'none',
         transform: 'translate(-50%, -50%)',

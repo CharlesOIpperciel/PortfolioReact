@@ -4,7 +4,7 @@ import "../styles/tailwind.css"
 function Intro() {
   return (
     <>
-      <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
+      <div className="flex items-center justify-center flex-col text-center pt-20 pb-4">
         <img 
           src="assets/LinkedInPhoto.jpg" 
           alt="Charles-Olivier Ipperciel" 
@@ -16,7 +16,7 @@ function Intro() {
         <p className="text-base md:text-xl mb-3 font-medium">
           <TypingEffect text="Sooftware Developer" />
         </p>
-        <p className="text-sm max-w-xl mb-6 font-bold text-justify">
+        <p className="text-sm max-w-xl mb-6 font-bold text-justify p-2">
           Hey! I&apos;m a software developer nearing the completion of my Bachelor&apos;s
           degree in Computer Science at Université de Sherbrooke. I have hands-on
           experience with React.js, Python, and object-oriented programming in

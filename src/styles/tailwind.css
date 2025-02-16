@@ -82,3 +82,16 @@
 .bounce-in-right {
   animation: bounceInRight 0.8s ease-out;
 }
+
+/* Mouse follower */
+@keyframes colorChange {
+  0% { background-color: red; }
+  25% { background-color: blue; }
+  50% { background-color: green; }
+  75% { background-color: yellow; }
+  100% { background-color: red; }
+}
+
+.mouse-follower {
+  animation: colorChange 4s infinite;
+}
