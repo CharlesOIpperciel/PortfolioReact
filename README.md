@@ -1,16 +1,17 @@
-# 🌟 My Portfolio 2.0 🌟
+# 🌟 My Portfolio 2.0 🌟  
 
-Welcome to my new portfolio website! This project showcases my work, skills, and experiences as a software developer.
+Welcome to my new **portfolio website**! This project highlights my work, skills, and experiences as a **software developer**.  
 
-Link: https://CharlesOIpperciel.github.io/PortfolioReact/
+🔗 **Check it out here**: [Portfolio 2.0](https://CharlesOIpperciel.github.io/PortfolioReact/)  
 
-## 🚀 Features
+## 🚀 Features  
 
-- **Interactive Timeline**: View my career timeline with detailed descriptions of my roles and projects.
-- **Project Portfolio**: Explore the projects I've worked on, complete with images, tech stack, and links.
-- **Contact Form**: Get in touch with me directly through the contact form.
-## 🛠️ Technologies Used
+- **📌 Interactive Timeline** – Explore my career journey with detailed descriptions of my roles and projects.  
+- **💼 Project Portfolio** – Browse my projects, complete with images, tech stack details, and links.  
+- **📬 Contact Form** – Reach out to me directly through an integrated contact form.  
 
-- **React**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Vite**: A fast build tool for modern web projects.
+## 🛠️ Technologies Used  
+
+- **⚛️ React** – JavaScript library for building dynamic user interfaces.  
+- **🎨 Tailwind CSS** – Utility-first CSS framework for rapid UI development.  
+- **⚡ Vite** – Fast and optimized build tool for modern web projects.  
