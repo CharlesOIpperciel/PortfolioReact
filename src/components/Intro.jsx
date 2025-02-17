@@ -14,7 +14,7 @@ function Intro() {
           Hi 👋, I&apos;m Charles-Olivier Ipperciel
         </h1>
         <p className="text-base md:text-xl mb-3 font-medium">
-          <TypingEffect text="Sooftware Developer" />
+          Software Developer
         </p>
         <p className="text-sm max-w-xl mb-6 font-bold text-justify p-2">
           Hey! I&apos;m a software developer nearing the completion of my Bachelor&apos;s
