@@ -30,14 +30,14 @@ function Intro() {
           href='assets/Resume_French.pdf' 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="bg-blue-300 font-semibold text-black px-6 py-2 rounded hover:bg-blue-400 hover:text-white transition transform transition duration-300 hover:scale-102 border-2 border-stone-600 bounce-in-left">
+          className="bg-blue-500 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105 border-2 border-stone-600">
           French CV
         </a>
         <a 
           href='assets/Resume_English.pdf' 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="bg-green-300 font-semibold text-black px-6 py-2 rounded hover:bg-green-400 hover:text-white transition transform transition duration-300 hover:scale-102 border-2 border-stone-600 bounce-in-right">
+          className="bg-green-500 text-white font-semibold px-6 py-2 rounded-md hover:bg-green-600 transition-transform duration-300 transform hover:scale-105 border-2 border-stone-600">
           English CV
         </a>
       </div>

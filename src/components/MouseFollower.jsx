@@ -20,8 +20,8 @@ function MouseFollower() {
   useEffect(() => {
     const updatePosition = () => {
       setPosition((prevPosition) => ({
-        x: prevPosition.x + (targetPosition.x - prevPosition.x) * 0.05,
-        y: prevPosition.y + (targetPosition.y - prevPosition.y) * 0.05,
+        x: prevPosition.x + (targetPosition.x - prevPosition.x) * 0.03,
+        y: prevPosition.y + (targetPosition.y - prevPosition.y) * 0.03,
       }));
       animationRef.current = requestAnimationFrame(updatePosition);
     };

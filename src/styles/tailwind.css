@@ -1,11 +1,25 @@
 @import "tailwindcss";
 
+/* Background */
+.custom-shape-divider-top-1740233702 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #f0cdcd, #d1e0f0); /* Very light gray to light gray gradient */
+}
+
 /*Smooth animation for every component*/
 
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -14,73 +28,7 @@
 }
 
 .animate-slideIn {
-  animation: slideIn 0.5s ease-out forwards;
-}
-
-/* Animation for profile picture */
-@keyframes bounceInTop {
-  0% {
-    transform: translateY(-500px);
-    opacity: 0;
-  }
-  60% {
-    transform: translateY(20px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateY(-7px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.bounce-in-top {
-  animation: bounceInTop 0.8s ease-out;
-}
-
-/* Animations for resume buttons */
-
-@keyframes bounceInLeft {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(5px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.bounce-in-left {
-  animation: bounceInLeft 0.8s ease-out;
-}
-
-@keyframes bounceInRight {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(-5px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.bounce-in-right {
-  animation: bounceInRight 0.8s ease-out;
+  animation: slideIn 1.0s ease-out forwards;
 }
 
 /* Mouse follower */
