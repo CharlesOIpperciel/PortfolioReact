@@ -1,21 +1,12 @@
 @import "tailwindcss";
 
 /* Background */
-.custom-shape-divider-top-1740233702 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
 body {
-  background: linear-gradient(to bottom right, #f0cdcd, #d1e0f0); /* Very light gray to light gray gradient */
+  background: #f5f5f5;
+  font-family: 'Inter', sans-serif;
 }
 
-/*Smooth animation for every component*/
-
+/* Smooth animation for every component */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -32,14 +23,51 @@ body {
 }
 
 /* Mouse follower */
-@keyframes colorChange {
-  0% { background-color: red; }
-  25% { background-color: blue; }
-  50% { background-color: green; }
-  75% { background-color: yellow; }
-  100% { background-color: red; }
+.mouse-follower {
+  background-color: #333;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  position: fixed;
 }
 
-.mouse-follower {
-  animation: colorChange 4s infinite;
+/* Cards */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Typing Effect Blinking Cursor */
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 24px;
+  color: black;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }

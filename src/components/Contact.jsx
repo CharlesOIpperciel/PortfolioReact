@@ -3,6 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <div className="flex flex-col items-center mb-10 mx-auto p-4 md:p-8">
+      <h2 className="text-2xl font-bold text-center mb-8">Contact</h2>
       <div className="w-full md:w-7/12">
         <form
           action="https://getform.io/f/aolmgwdb"

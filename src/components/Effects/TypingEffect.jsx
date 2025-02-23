@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from 'react';
 
-const TypingEffect = ({ text, speed = 50 }) => {
+const TypingEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
+  const [isBlinking, setIsBlinking] = useState(true);
 
   useEffect(() => {
-    setDisplayedText('');
     let index = 0;
     const interval = setInterval(() => {
-      setDisplayedText((prev) => prev + text.charAt(index));
+      setDisplayedText(text.slice(0, index));
       index++;
-      if (index === text.length) {
+      if (index > text.length) {
         clearInterval(interval);
+        setIsBlinking(true);
       }
-    }, speed);
-    return () => clearInterval(interval);
-  }, [text, speed]);
+    }, 100);
 
-  return <span>{displayedText}</span>;
+    return () => clearInterval(interval);
+  }, [text]);
+
+  return (
+    <span>
+      {displayedText}
+      <span className={`blinking-cursor ${isBlinking ? 'visible' : ''}`}>|</span>
+    </span>
+  );
 };
 
 export default TypingEffect;
