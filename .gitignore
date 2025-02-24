@@ -1,3 +1,6 @@
 node_modules/
 DS_Store/
 dist/
+public/CV/*
+!public/CV/EngCV.pdf
+!public/CV/FrCV.pdf

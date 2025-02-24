@@ -17,14 +17,14 @@ function Intro() {
       </p>
       <div className="flex justify-center space-x-4 pt-6 pb-20">
         <a 
-          href='assets/Resume_French.pdf' 
+          href='CV/FrCV.pdf' 
           target="_blank" 
           rel="noopener noreferrer" 
           className="bg-blue-500 text-white font-semibold px-6 py-2 rounded-md hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105">
           French CV
         </a>
         <a 
-          href='assets/Resume_English.pdf' 
+          href='CV/EngCV.pdf' 
           target="_blank" 
           rel="noopener noreferrer" 
           className="bg-green-500 text-white font-semibold px-6 py-2 rounded-md hover:bg-green-600 transition-transform duration-300 transform hover:scale-105">
