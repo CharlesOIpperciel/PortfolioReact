@@ -67,7 +67,7 @@ export default [
     duration: "3 years",
     details:
       "Bachelor of Science in Computer Science (COOP Program) at UdS. Learned about data structures and algorithms, discrete mathematics, linear algebra, operating systems, AI and more.",
-    current: "past",
+    current: true,
   },
   {
     year: "2019",
