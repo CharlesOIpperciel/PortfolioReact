@@ -20,6 +20,7 @@ function Timeline() {
             company={item.company}
             duration={item.duration}
             details={item.details}
+            current={item.current}
           />
         ))}
       </div>

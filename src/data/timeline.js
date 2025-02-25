@@ -1,12 +1,31 @@
 export default [
   {
-    year: "Today",
+    year: "Fall 2025",
+    type: "Education 🎓",
+    title: "Master's Degree in Computer Science",
+    company: "UdS",
+    duration: "Starting September 2025",
+    details:
+      "Pursuing a part-time Master's degree in Computer Science at UdS while working full-time. It's a 45-credit, regular track course-based program.",
+  },
+  {
+    year: "Winter 2025",
+    type: "Full-time 👔",
+    title: "Software Developer",
+    company: "UdS",
+    duration: "Starting May 1st 2025",
+    details:
+      "Accepted a full-time position at UdS, continuing my work on MEDomicsLab while taking on more responsibilities. Still working with React, Python, MongoDB, and various modern libraries, contributing to both frontend and backend improvements. Balancing this role with my part-time Master's studies.",
+  },  
+  {
+    year: "Winter 2024",
     type: "Part-time 💻",
     title: "Software Developer",
     company: "UdS",
-    duration: "On-going",
+    duration: "9 months",
     details:
       "Development of MEDomicsLab. Transitioned from a Summer 2024 internship into a part-time position. Still focusing on continuous improvement and updates to the application, alongside reviewing pull requests.",
+    current: true,
   },
   {
     year: "Summer 2024",
