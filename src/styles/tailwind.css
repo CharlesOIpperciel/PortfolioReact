@@ -72,18 +72,22 @@ body {
   }
 }
 
-/* Timeline item dot */
-@keyframes colorChange {
-  0% { background-color: red; }
-  14% { background-color: orange; }
-  28% { background-color: yellow; }
-  42% { background-color: green; }
-  57% { background-color: blue; }
-  71% { background-color: indigo; }
-  85% { background-color: violet; }
-  100% { background-color: red; }
+/* Pulsing effect for current node */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1.0);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
-.animate-colorChange {
-  animation: colorChange 10s infinite;
+.animate-pulse {
+  animation: pulse 3s infinite;
 }

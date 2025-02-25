@@ -7,6 +7,7 @@ export default [
     duration: "Starting September 2025",
     details:
       "Pursuing a part-time Master's degree in Computer Science at UdS while working full-time. It's a 45-credit, regular track course-based program.",
+    current: "future",
   },
   {
     year: "Winter 2025",
@@ -16,6 +17,7 @@ export default [
     duration: "Starting May 1st 2025",
     details:
       "Accepted a full-time position at UdS, continuing my work on MEDomicsLab while taking on more responsibilities. Still working with React, Python, MongoDB, and various modern libraries, contributing to both frontend and backend improvements. Balancing this role with my part-time Master's studies.",
+    current: "future",
   },  
   {
     year: "Winter 2024",
@@ -35,6 +37,7 @@ export default [
     duration: "4 months",
     details:
       "Internship at MEDomicsLab, an open-source platform for integrating AI into healthcare. I enhanced the platform's scalability by implementing MongoDB, optimizing both backend (Python) and frontend (React) to handle larger healthcare datasets.",
+    current: "past",
   },
   {
     year: "Fall 2023",
@@ -44,6 +47,7 @@ export default [
     duration: "4 months",
     details:
       "Internship at Sherweb. Worked with the billing team, handling backend development for all processes related to billing and credit card transactions.",
+    current: "past",
   },
   {
     year: "Winter 2023",
@@ -53,6 +57,7 @@ export default [
     duration: "4 months",
     details:
       "Internship at Qwatro inc. Developed an application to track on-site workers' hours and assisted in the necessary steps for acquiring an appropriate ERP system.",
+    current: "past",
   },
   {
     year: "2022",
@@ -62,6 +67,7 @@ export default [
     duration: "3 years",
     details:
       "Bachelor of Science in Computer Science (COOP Program) at UdS. Learned about data structures and algorithms, discrete mathematics, linear algebra, operating systems, AI and more.",
+    current: "past",
   },
   {
     year: "2019",
@@ -71,5 +77,6 @@ export default [
     duration: "2 years",
     details:
       "Bachelor of Business Administration (2-year major) at HEC Montreal. Learned about finance, accounting, HR, marketing and more.",
+    current: "past",
   },
 ];
