@@ -12,7 +12,7 @@ export default [
   {
     year: "Winter 2025",
     type: "Full-time 👔",
-    title: "Software Developer",
+    title: "Full-stack Developer",
     company: "UdS",
     duration: "Starting May 1st 2025",
     details:
@@ -22,7 +22,7 @@ export default [
   {
     year: "Winter 2024",
     type: "Part-time 💻",
-    title: "Software Developer",
+    title: "Full-stack Developer",
     company: "UdS",
     duration: "9 months",
     details:
@@ -32,7 +32,7 @@ export default [
   {
     year: "Summer 2024",
     type: "Internship 🎒",
-    title: "Software Developer",
+    title: "Full-stack Developer",
     company: "UdS",
     duration: "4 months",
     details:
@@ -52,7 +52,7 @@ export default [
   {
     year: "Winter 2023",
     type: "Internship 🎒",
-    title: "Software Developer",
+    title: "Full-stack Developer",
     company: "Qwatro",
     duration: "4 months",
     details:
