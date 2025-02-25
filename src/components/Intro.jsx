@@ -5,9 +5,9 @@ function Intro() {
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-4">
       <img 
-        src="assets/LinkedInPhoto.jpg" 
+        src="pictures/1055.jpg" 
         alt="Charles-Olivier Ipperciel" 
-        className="w-48 h-48 rounded-full mb-4 transform transition-transform duration-500 hover:scale-110"
+        className="rounded-full mb-4 transform transition-transform duration-500 hover:scale-110 object-cover max-w-50 max-h-full"
       />
       <h1 className="text-2xl md:text-4xl mb-2 font-bold">
         Hi, I&apos;m Charles-Olivier Ipperciel 👋
