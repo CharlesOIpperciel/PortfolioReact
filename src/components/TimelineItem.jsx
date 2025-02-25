@@ -2,7 +2,10 @@ import React from "react";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 function TimelineItem({ year, type, title, company, duration, details }) {
-  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [ref, isVisible] = useIntersectionObserver({ 
+    threshold: 0.1,
+    triggerOnce: true, 
+  });
   const typeColor = type === "Part-time 💻" ? "bg-orange-500" : 
                     type === "Education 🎓" ? "bg-blue-500" : 
                     type === "Internship 🎒" ? "bg-green-500" : "" ;
