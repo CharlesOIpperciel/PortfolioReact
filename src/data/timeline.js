@@ -24,7 +24,7 @@ export default [
     type: "Part-time 💻",
     title: "Full-stack Developer",
     company: "UdS",
-    duration: "9 months",
+    duration: "8 months",
     details:
       "Development of MEDomicsLab. Transitioned from a Summer 2024 internship into a part-time position. Still focusing on continuous improvement and updates to the application, alongside reviewing pull requests.",
     current: true,
