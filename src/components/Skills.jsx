@@ -12,7 +12,7 @@ const Skills = () => {
 
     return (
         <section ref={ref} className="py-12">
-            <h2 className="text-2xl font-bold text-center mb-8">My Skills</h2>
+            <h2 className="text-2xl font-bold text-center mb-4">Skills</h2>
             <div className="flex flex-wrap justify-center gap-6">
                 {skills.map((skill, index) => (
                     <Tooltip key={index} text={skill.description}>

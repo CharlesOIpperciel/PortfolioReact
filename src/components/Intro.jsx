@@ -3,19 +3,19 @@ import TypingEffect from "./Effects/TypingEffect";
 
 function Intro() {
   return (
-    <div className="flex items-center justify-center flex-col text-center pt-20 pb-4">
+    <div className="flex items-center justify-center flex-col text-center pt-10 pb-20">
       <img 
         src="pictures/1055_compressed.jpg" 
         alt="Charles-Olivier Ipperciel" 
-        className="rounded-full mb-4 transform transition-transform duration-500 hover:scale-110 object-cover max-w-50 max-h-full"
+        className="rounded-full mb-5 transform transition-transform duration-500 hover:scale-110 object-cover max-w-50 max-h-full"
       />
-      <h1 className="text-2xl md:text-4xl mb-2 font-bold">
+      <h1 className="text-2xl md:text-2xl mb-5 font-bold">
         Hi, I&apos;m Charles-Olivier Ipperciel 👋
       </h1>
-      <p className="text-lg md:text-xl mb-2 font-medium text-gray-700">
+      <p className="text-lg md:text-xl mb-7 font-medium text-gray-700">
         <TypingEffect text="Software Developer" />
       </p>
-      <div className="flex justify-center space-x-4 pt-6 pb-20">
+      <div className="flex justify-center space-x-4">
         <a 
           href='CV/FrCV.pdf' 
           target="_blank" 
