@@ -12,11 +12,11 @@ export default [
   {
     year: "Winter 2025",
     type: "Full-time 👔",
-    title: "Full-stack Developer",
-    company: "UdS",
-    duration: "Starting May 1st 2025",
+    title: "Strategic Buyer and IT Analyst",
+    company: "A1 Imports",
+    duration: "Starting May 5th 2025",
     details:
-      "Accepted a full-time position at UdS, continuing my work on MEDomicsLab while taking on more responsibilities. Still working with React, Python, MongoDB, and various modern libraries, contributing to both frontend and backend improvements. Balancing this role with my part-time Master's studies.",
+      "Accepted a full-time position at A1 Imports as a Strategic Buyer for the A1 Arbitrage Division. In this role, I’ll be responsible for managing relationships with distributors, ensuring stock levels are maintained, handling database operations, and placing new orders. I’ll also be putting my computer science background to good use by automating tasks and improving efficiency within the company. All of this while continuing my part-time Master’s studies.",
     current: "future",
   },  
   {
@@ -24,7 +24,7 @@ export default [
     type: "Part-time 💻",
     title: "Full-stack Developer",
     company: "UdS",
-    duration: "8 months",
+    duration: "9 months",
     details:
       "Development of MEDomicsLab. Transitioned from a Summer 2024 internship into a part-time position. Still focusing on continuous improvement and updates to the application, alongside reviewing pull requests.",
     current: true,
