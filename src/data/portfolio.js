@@ -9,7 +9,7 @@ export default [
         title: "Vitopia - 2D AI Simulation",
         imgUrl: "assets/VitopiaLogo.jpg",
         stack: ["C++", "OpenGL"],
-        link: "In development",
+        link: "https://github.com/CharlesOIpperciel/Vitopia",
     },
     {
         title: "Coded Kingdom",
