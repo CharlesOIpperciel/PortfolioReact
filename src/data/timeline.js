@@ -12,13 +12,13 @@ export default [
   {
     year: "Winter 2025",
     type: "Full-time 👔",
-    title: "Strategic Buyer and IT Analyst",
+    title: "Procurement Buyer & Software Developer",
     company: "A1 Imports",
     duration: "Starting May 5th 2025",
     details:
-      "Accepted a full-time position at A1 Imports as a Strategic Buyer for the A1 Arbitrage Division. In this role, I’ll be responsible for managing relationships with distributors, ensuring stock levels are maintained, handling database operations, and placing new orders. I’ll also be putting my computer science background to good use by automating tasks and improving efficiency within the company.",
-    current: "future",
-  },  
+      "Accepted a full-time position at A1 Imports under the A1 Arbitrage Division. In this role, I’ll be responsible for sourcing suppliers, negotiating contracts, ensuring timely deliveries, and making sales predictions to drive business growth. Also tasked with writing Python scripts to automate daily activities and enhance efficiency through data analysis.",
+    current: true,
+    },  
   {
     year: "Winter 2024",
     type: "Part-time 💻",
@@ -27,7 +27,7 @@ export default [
     duration: "9 months",
     details:
       "Development of MEDomicsLab. Transitioned from a Summer 2024 internship into a part-time position. Still focusing on continuous improvement and updates to the application, alongside reviewing pull requests.",
-    current: true,
+    current: "past",
   },
   {
     year: "Summer 2024",
@@ -67,7 +67,7 @@ export default [
     duration: "3 years",
     details:
       "Bachelor of Science in Computer Science (COOP Program) at UdS. Learned about data structures and algorithms, discrete mathematics, linear algebra, operating systems, AI and more.",
-    current: true,
+    current: "past",
   },
   {
     year: "2019",
