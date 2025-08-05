@@ -1,48 +1,77 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import "../styles/tailwind.css"
 
 function MouseFollower() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
-  const animationRef = useRef(null);
+  const followerRef = useRef(null);
+  const isVisible = useRef(false);
 
   useEffect(() => {
+    const follower = followerRef.current;
+    if (!follower) return;
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let followerX = 0;
+    let followerY = 0;
+    let animationId;
+
     const handleMouseMove = (event) => {
-      setTargetPosition({ x: event.clientX, y: event.clientY });
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+      
+      if (!isVisible.current) {
+        isVisible.current = true;
+        follower.style.opacity = '1';
+      }
     };
 
+    const handleMouseLeave = () => {
+      isVisible.current = false;
+      follower.style.opacity = '0';
+    };
+
+    const animate = () => {
+      // Smooth easing
+      followerX += (mouseX - followerX) * 0.15;
+      followerY += (mouseY - followerY) * 0.15;
+
+      // Use transform instead of changing position
+      follower.style.transform = `translate(${followerX}px, ${followerY}px) translate(-50%, -50%)`;
+      
+      animationId = requestAnimationFrame(animate);
+    };
+
+    // Start animation
+    animate();
+
+    // Add event listeners
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseleave', handleMouseLeave);
+
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseleave', handleMouseLeave);
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
     };
   }, []);
 
-  useEffect(() => {
-    const updatePosition = () => {
-      setPosition((prevPosition) => ({
-        x: prevPosition.x + (targetPosition.x - prevPosition.x) * 0.05,
-        y: prevPosition.y + (targetPosition.y - prevPosition.y) * 0.05,
-      }));
-      animationRef.current = requestAnimationFrame(updatePosition);
-    };
-
-    animationRef.current = requestAnimationFrame(updatePosition);
-    
-    return () => cancelAnimationFrame(animationRef.current);
-  }, [targetPosition]);
-
   return (
     <div
+      ref={followerRef}
       className="mouse-follower"
       style={{
         position: 'fixed',
-        top: position.y,
-        left: position.x,
-        width: '10px',
-        height: '10px',
+        top: 0,
+        left: 0,
+        width: '20px',
+        height: '20px',
         borderRadius: '50%',
         pointerEvents: 'none',
-        transform: 'translate(-50%, -50%)',
+        opacity: 0,
+        transition: 'opacity 0.3s ease',
+        zIndex: 9999,
       }}
     />
   );

@@ -5,26 +5,32 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Timeline from './components/Timeline';
 import MouseFollower from './components/MouseFollower';
-import useIntersectionObserver from './hooks/useIntersectionObserver';
+import Title from './components/Title';
 import './styles/tailwind.css';
 import Skills from './components/Skills';
 
 function App() {
-  const [introRef, introVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [portfolioRef, portfolioVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [timelineRef, timelineVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [contactRef, contactVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [footerRef, footerVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [skillsRef, skillsVisible] = useIntersectionObserver({ threshold: 0.1});
-
   return (
     <div className='App'>
-      <div ref={introRef} className={introVisible ? 'animate-slideIn' : ''}><Intro /></div>
-      <div ref={portfolioRef} className={portfolioVisible ? 'animate-slideIn' : ''}><Portfolio /></div>
-      <div ref={skillsRef} className={skillsVisible ? 'animate-slideIn' : ''}><Skills/></div>     
-      <div ref={timelineRef} className={timelineVisible ? 'animate-slideIn' : ''}><Timeline /></div>
-      <div ref={contactRef} className={contactVisible ? 'animate-slideIn' : ''}><Contact /></div>
-      <div ref={footerRef} className={footerVisible ? 'animate-slideIn' : ''}><Footer /></div>
+      <Title />
+      <div id="intro">
+        <Intro />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
+      </div>
+      <div id="skills">
+        <Skills/>
+      </div>     
+      <div id="timeline">
+        <Timeline />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <div>
+        <Footer />
+      </div>
       <MouseFollower />
     </div>
   );

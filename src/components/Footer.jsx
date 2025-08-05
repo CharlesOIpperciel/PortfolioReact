@@ -2,57 +2,83 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="py-5 text-center">
-      <div className="container max-w-screen-lg mx-auto">
-        <div>
-          <div className="flex flex-wrap justify-center gap-2">
-            <a
-              href="https://www.linkedin.com/in/coipp/"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full transform transition-transform duration-200 hover:scale-110"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                className="w-5 h-5 fill-current"
-                role="img"
-                viewBox="0 0 256 256"
-                xmlns="http://www.w3.org/2000/svg"
+    <footer className="py-12 px-6 relative">
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/5 to-cyan-500/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+        {/* Main Footer Content */}
+        <div className="glass rounded-2xl p-8 mb-8">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              <span className="gradient-text">Charles-Olivier</span>
+              <span className="text-white"> Ipperciel</span>
+            </h3>
+            <p className="text-white/70 mb-6 max-w-2xl mx-auto">
+              Software developer passionate about creating innovative solutions and bringing ideas to life through code.
+            </p>
+            
+            {/* Social Links */}
+            <div className="flex justify-center gap-6 mb-8">
+              <a
+                href="https://www.linkedin.com/in/coipp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
               >
-                <g>
-                  <path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055" />
-                </g>
-              </svg>
-            </a>
-            <a
-              href="https://github.com/CharlesOIpperciel"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full transform transition-transform duration-200 hover:scale-110"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                role="img"
-                className="w-5"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 24 24"
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 2.004a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-12a2 2 0 00-2-2h-12zm3.968 12.86v-6.438h-1.98v6.438h1.98zm-.98-7.282c.686 0 1.112-.448 1.112-1.006 0-.558-.426-1.006-1.112-1.006-.686 0-1.112.448-1.112 1.006 0 .558.426 1.006 1.112 1.006zm7.982 7.282v-3.62c0-.186.013-.372.068-.552.06-.18.158-.342.292-.486.134-.144.304-.258.508-.342.204-.084.44-.126.708-.126.268 0 .504.042.708.126.204.084.374.198.508.342.134.144.232.306.292.486.055.18.068.366.068.552v3.62h1.98v-4.806c0-.372-.066-.69-.198-.954-.132-.264-.318-.486-.558-.666-.24-.18-.524-.318-.852-.414-.328-.096-.688-.144-1.08-.144-.392 0-.752.048-1.08.144-.328.096-.612.234-.852.414-.24.18-.426.402-.558.666-.132.264-.198.582-.198.954v4.806h1.98z"/>
+                </svg>
+              </a>
+              
+              <a
+                href="https://github.com/CharlesOIpperciel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
               >
-                <g fill="none">
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
-                    fill="currentColor"
-                  />
-                </g>
-              </svg>
-            </a>
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                </svg>
+              </a>
+
+              <a
+                href="mailto:charles.olivier.ipperciel@gmail.com"
+                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              >
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Quick Links */}
+            <div className="flex flex-wrap justify-center gap-8 text-sm">
+              <a href="#intro" className="text-white/70 hover:text-white transition-colors duration-200">Home</a>
+              <a href="#portfolio" className="text-white/70 hover:text-white transition-colors duration-200">Projects</a>
+              <a href="#skills" className="text-white/70 hover:text-white transition-colors duration-200">Skills</a>
+              <a href="#timeline" className="text-white/70 hover:text-white transition-colors duration-200">Experience</a>
+              <a href="#contact" className="text-white/70 hover:text-white transition-colors duration-200">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center">
+          <div className="glass-dark rounded-xl p-4">
+            <p className="text-white/60 text-sm">
+              © 2024 Charles-Olivier Ipperciel. Built with React and Tailwind CSS.
+            </p>
+            <p className="text-white/40 text-xs mt-2">
+              Made with ❤️ in Montreal, Quebec
+            </p>
           </div>
         </div>
       </div>
-      <p className="text-sm mt-2  opacity-50">Charles-Olivier Ipperciel</p>
-    </div>
+    </footer>
   );
 }
 

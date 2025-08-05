@@ -14,7 +14,7 @@ export default [
     type: "Full-time 👔",
     title: "Procurement Buyer & Software Developer",
     company: "A1 Imports",
-    duration: "Starting May 5th 2025",
+    duration: "On-Going",
     details:
       "Accepted a full-time position at A1 Imports under the A1 Arbitrage Division. In this role, I’ll be responsible for sourcing suppliers, negotiating contracts, ensuring timely deliveries, and making sales predictions to drive business growth. Also tasked with writing Python scripts to automate daily activities and enhance efficiency through data analysis.",
     current: true,

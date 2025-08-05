@@ -30,8 +30,23 @@ export default [
         icons: "assets/linux.svg"
     },
     {
-        skill: "More",
-        description: "I'm comfortable with a lot more tools, but those are just the main ones. Check my CV if you're interested in the others.",
-        icons: "assets/tools.svg"
+        skill: "Firebase",
+        description: "I mainly use Firebase for database and authentication needs.",
+        icons: "assets/firebase.svg"
+    },
+    {
+        skill: "Amazon SP-API",
+        description: "Used for integrating Amazon marketplace data and automating e-commerce operations.",
+        icons: "assets/amazon.png"
+    },
+    {
+        skill: "Make.com",
+        description: "Automation platform for connecting apps and services, streamlining workflows.",
+        icons: "assets/make.svg"
+    },
+    {
+        skill: "Excel",
+        description: "Advanced Excel for data analysis, reporting, and business intelligence.",
+        icons: "assets/excel.png"
     }
 ];
