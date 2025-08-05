@@ -13,24 +13,24 @@ function PortfolioItem({ title, imgUrl, stack, link, isPrivate }) {
           <img
             src={imgUrl}
             alt={title}
-            className="w-full h-48 md:h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+            className="w-full h-48 md:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
           />
           
           {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end">
             <div className="p-6 w-full">
               <h3 className="text-white text-xl font-bold mb-2">{title}</h3>
               <div className="flex flex-wrap gap-2">
                 {stack.slice(0, 3).map((item, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full border border-white/30"
+                    className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full border border-white/30"
                   >
                     {item}
                   </span>
                 ))}
                 {stack.length > 3 && (
-                  <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full border border-white/30">
+                  <span className="px-3 py-1 bg-white/20 text-white text-sm font-medium rounded-full border border-white/30">
                     +{stack.length - 3} more
                   </span>
                 )}
@@ -41,7 +41,7 @@ function PortfolioItem({ title, imgUrl, stack, link, isPrivate }) {
 
         {/* Content */}
         <div className="p-6">
-          <h3 className="text-xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+          <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-200">
             {title}
           </h3>
           
@@ -52,7 +52,7 @@ function PortfolioItem({ title, imgUrl, stack, link, isPrivate }) {
               {stack.map((item, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-white/10 backdrop-blur-sm text-white/90 text-xs font-medium rounded-lg border border-white/20 hover:bg-white/20 transition-colors duration-200"
+                  className="px-3 py-1 bg-white/10 text-white/90 text-xs font-medium rounded-lg border border-white/20 hover:bg-white/20 transition-colors duration-200"
                 >
                   {item}
                 </span>

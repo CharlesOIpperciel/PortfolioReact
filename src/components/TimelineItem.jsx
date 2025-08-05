@@ -31,13 +31,13 @@ function TimelineItem({ year, type, title, company, duration, details, current, 
             <span className={`px-3 py-1 text-xs font-semibold text-white ${getTypeColor(type)} rounded-full`}>
               {type}
             </span>
-            <span className="px-3 py-1 text-xs font-semibold text-white bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <span className="px-3 py-1 text-xs font-semibold text-white bg-white/10 rounded-full border border-white/20">
               {company}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors duration-200">
             {title}
           </h3>
 
@@ -72,9 +72,6 @@ function TimelineItem({ year, type, title, company, duration, details, current, 
               <span className="text-sm text-blue-400 font-medium">Upcoming</span>
             </div>
           )}
-
-          {/* Hover effect overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
       </div>
     </div>

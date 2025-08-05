@@ -4,6 +4,7 @@ import "../styles/tailwind.css"
 function MouseFollower() {
   const followerRef = useRef(null);
   const isVisible = useRef(false);
+  const lastMouseMove = useRef(0);
 
   useEffect(() => {
     const follower = followerRef.current;
@@ -14,8 +15,14 @@ function MouseFollower() {
     let followerX = 0;
     let followerY = 0;
     let animationId;
+    let isAnimating = false;
 
     const handleMouseMove = (event) => {
+      const now = Date.now();
+      // Throttle mouse move events to reduce performance impact
+      if (now - lastMouseMove.current < 16) return; // ~60fps
+      lastMouseMove.current = now;
+
       mouseX = event.clientX;
       mouseY = event.clientY;
       
@@ -31,12 +38,22 @@ function MouseFollower() {
     };
 
     const animate = () => {
-      // Smooth easing
-      followerX += (mouseX - followerX) * 0.15;
-      followerY += (mouseY - followerY) * 0.15;
+      if (!isVisible.current) {
+        animationId = requestAnimationFrame(animate);
+        return;
+      }
 
-      // Use transform instead of changing position
-      follower.style.transform = `translate(${followerX}px, ${followerY}px) translate(-50%, -50%)`;
+      // Smooth easing with reduced precision for better performance
+      const dx = mouseX - followerX;
+      const dy = mouseY - followerY;
+      
+      if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
+        followerX += dx * 0.1;
+        followerY += dy * 0.1;
+        
+        // Use transform3d for hardware acceleration
+        follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) translate(-50%, -50%)`;
+      }
       
       animationId = requestAnimationFrame(animate);
     };
@@ -44,8 +61,8 @@ function MouseFollower() {
     // Start animation
     animate();
 
-    // Add event listeners
-    window.addEventListener('mousemove', handleMouseMove);
+    // Add event listeners with passive option for better performance
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
     window.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
@@ -72,6 +89,7 @@ function MouseFollower() {
         opacity: 0,
         transition: 'opacity 0.3s ease',
         zIndex: 9999,
+        willChange: 'transform',
       }}
     />
   );

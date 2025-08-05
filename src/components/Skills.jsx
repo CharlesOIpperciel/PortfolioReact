@@ -22,7 +22,7 @@ const Skills = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     {skills.map((skill, index) => (
                         <Tooltip key={index} text={skill.description}>
-                            <div className="glass-dark rounded-2xl p-6 text-center card-hover cursor-pointer transform transition-all duration-500 group">
+                            <div className="glass-dark rounded-2xl p-6 text-center card-hover cursor-pointer group">
                                 {/* Skill Icon */}
                                 <div className="relative mb-4">
                                     <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-lg"></div>
@@ -34,12 +34,9 @@ const Skills = () => {
                                 </div>
 
                                 {/* Skill Name */}
-                                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-300 transition-colors duration-200">
                                     {skill.skill}
                                 </h3>
-
-                                {/* Hover effect overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
                         </Tooltip>
                     ))}

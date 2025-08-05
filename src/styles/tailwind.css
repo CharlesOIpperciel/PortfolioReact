@@ -86,19 +86,19 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Glassmorphism effects */
+/* Glassmorphism effects - optimized for performance */
 .glass {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  /* Removed backdrop-filter for better performance */
 }
 
 .glass-dark {
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* Removed backdrop-filter for better performance */
 }
 
 /* Gradient text */
@@ -116,7 +116,7 @@ body {
   background-clip: text;
 }
 
-/* Enhanced mouse follower */
+/* Enhanced mouse follower - optimized */
 .mouse-follower {
   background: linear-gradient(45deg, #667eea, #764ba2);
   border-radius: 50%;
@@ -129,14 +129,15 @@ body {
   transform-style: preserve-3d;
 }
 
-/* Card hover effects */
+/* Card hover effects - optimized for performance */
 .card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
 }
 
 .card-hover:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Button styles */
@@ -147,7 +148,7 @@ body {
   padding: 12px 24px;
   border-radius: 12px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
 }
@@ -168,8 +169,8 @@ body {
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 /* Typing Effect Blinking Cursor */
@@ -210,13 +211,13 @@ body {
   animation-fill-mode: forwards;
 }
 
-/* Timeline animations */
+/* Timeline animations - optimized */
 .timeline-item {
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .timeline-item:hover {
-  transform: translateX(10px);
+  transform: translateX(5px);
 }
 
 /* Form styles */
@@ -226,7 +227,7 @@ body {
   border-radius: 12px;
   padding: 16px;
   color: white;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .form-input:focus {
