@@ -25,7 +25,7 @@ function Intro() {
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Profile Image with enhanced glow */}
-        <div className="mb-12 relative">
+        <div className="mt-8 mb-12 relative">
           <div className="relative inline-block">
             {/* Multiple glow layers for depth */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-2xl animate-pulse"></div>
