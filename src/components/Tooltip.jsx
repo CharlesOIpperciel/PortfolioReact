@@ -4,9 +4,11 @@ const Tooltip = ({ children, text }) => {
     return (
         <div className="relative group">
             {children}
-            <div className="absolute top-full left-0 w-full mt-2 bg-gray-800 text-white text-xs rounded py-1 px-2 z-10 whitespace-no-wrap shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-justify">
-                {text}
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-b-8 border-b-gray-800 border-x-8 border-x-transparent border-t-0"></div>
+            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 tooltip-new opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto">
+                <div className="bg-black/95 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-3 text-sm text-gray-200 shadow-2xl max-w-xs text-center">
+                    {text}
+                </div>
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 -translate-y-1 w-2 h-2 bg-black/95 border-r border-b border-gray-700 rotate-45"></div>
             </div>
         </div>
     );

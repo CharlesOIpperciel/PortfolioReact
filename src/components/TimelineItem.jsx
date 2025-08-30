@@ -2,74 +2,61 @@ import "../styles/tailwind.css"
 
 function TimelineItem({ year, type, title, company, duration, details, current, index }) {
   const getTypeColor = (type) => {
-    if (type.includes("Part-time")) return "bg-orange-500";
-    if (type.includes("Education")) return "bg-blue-500";
-    if (type.includes("Internship")) return "bg-green-500";
-    if (type.includes("Full-time")) return "bg-purple-500";
-    return "bg-gray-500";
+    if (type.includes("Part-time")) return "bg-warning";
+    if (type.includes("Education")) return "bg-info";
+    if (type.includes("Internship")) return "bg-success";
+    if (type.includes("Full-time")) return "bg-primary";
+    return "bg-secondary";
   };
 
-  const isLeft = index % 2 === 0;
-
   return (
-    <div className={`relative group ${isLeft ? 'pr-1/2' : 'pl-1/2'}`}>
-      {/* Timeline Marker */}
-      <div className={`absolute ${isLeft ? 'right-0' : 'left-0'} top-6 transform ${isLeft ? 'translate-x-1/2' : '-translate-x-1/2'} w-4 h-4 ${getTypeColor(type)} rounded-full shadow-lg z-10`}></div>
-      
+    <div className="relative group w-full h-full">
       {/* Content Card */}
-      <div className={`${isLeft ? 'mr-8' : 'ml-8'}`}>
-        <div className={`glass-dark rounded-2xl p-6 card-hover relative overflow-visible ${current === true ? 'ring-2 ring-green-400/30 bg-green-500/5' : ''}`}>
-          {/* Date Badge - Fixed positioning */}
-          <div className="absolute -top-4 left-4">
-            <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-              {year}
-            </div>
-          </div>
-
+      <div className="w-full h-full">
+        <div className={`card p-3 relative overflow-visible timeline-item h-full flex flex-col ${current === true ? 'ring-2 ring-highlight bg-card' : ''}`}>
           {/* Header */}
-          <div className="flex flex-wrap gap-3 mb-4 mt-2">
-            <span className={`px-3 py-1 text-xs font-semibold text-white ${getTypeColor(type)} rounded-full`}>
+          <div className="flex flex-wrap gap-1.5 mb-2 mt-1">
+            <span className={`px-2 py-0.5 text-xs font-semibold text-white ${getTypeColor(type)} rounded uppercase tracking-wide`}>
               {type}
             </span>
-            <span className="px-3 py-1 text-xs font-semibold text-white bg-white/10 rounded-full border border-white/20">
+            <span className="px-2 py-0.5 text-xs font-semibold text-secondary bg-card rounded border border-gray-700 uppercase tracking-wide">
               {company}
+            </span>
+            <span className="bg-highlight text-black px-2 py-0.5 rounded-full text-xs font-semibold shadow-sm uppercase tracking-wide">
+              {year}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors duration-200">
+          <h3 className="text-sm font-semibold text-accent mb-1.5 group-hover:text-primary transition-colors duration-200 uppercase tracking-wide text-justify">
             {title}
           </h3>
 
-          {/* Duration with enhanced visual */}
-          <div className="text-sm text-white/60 mb-4 font-medium flex items-center gap-2 bg-white/5 px-3 py-2 rounded-lg">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {/* Duration */}
+          <div className="text-xs text-secondary mb-2 font-medium flex items-center gap-1 bg-card px-2 py-0.5 rounded">
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span className="font-semibold">{duration}</span>
+            <span className="uppercase tracking-wide">{duration}</span>
           </div>
 
           {/* Details */}
-          <p className="text-white/80 leading-relaxed">
+          <p className="text-xs text-secondary leading-relaxed text-justify flex-grow">
             {details}
           </p>
 
-          {/* Current indicator - More prominent */}
+          {/* Current indicator */}
           {current === true && (
-            <div className="mt-4 flex items-center gap-2 bg-green-500/20 px-4 py-3 rounded-lg border-2 border-green-400/50">
-              <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-sm text-green-300 font-semibold">Current Position</span>
-              <svg className="w-4 h-4 text-green-400 ml-auto" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
+            <div className="mt-2 flex items-center gap-1.5 bg-highlight px-2 py-1 rounded border border-highlight">
+              <span className="text-xs text-black font-semibold uppercase tracking-wide">Current Position</span>
             </div>
           )}
 
           {/* Future indicator */}
           {current === "future" && (
-            <div className="mt-4 flex items-center gap-2 bg-blue-500/10 px-3 py-2 rounded-lg border border-blue-500/20">
-              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <span className="text-sm text-blue-400 font-medium">Upcoming</span>
+            <div className="mt-2 flex items-center gap-1.5 bg-info px-2 py-1 rounded border border-info">
+              <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+              <span className="text-xs text-white font-semibold uppercase tracking-wide">Upcoming</span>
             </div>
           )}
         </div>

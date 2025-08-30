@@ -15,12 +15,11 @@ function MouseFollower() {
     let followerX = 0;
     let followerY = 0;
     let animationId;
-    let isAnimating = false;
 
     const handleMouseMove = (event) => {
       const now = Date.now();
-      // Throttle mouse move events to reduce performance impact
-      if (now - lastMouseMove.current < 16) return; // ~60fps
+      // Throttle to 30fps for better performance
+      if (now - lastMouseMove.current < 33) return;
       lastMouseMove.current = now;
 
       mouseX = event.clientX;
@@ -43,11 +42,12 @@ function MouseFollower() {
         return;
       }
 
-      // Smooth easing with reduced precision for better performance
+      // Simplified easing with better performance
       const dx = mouseX - followerX;
       const dy = mouseY - followerY;
       
-      if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
+      // Only update if movement is significant
+      if (Math.abs(dx) > 1 || Math.abs(dy) > 1) {
         followerX += dx * 0.1;
         followerY += dy * 0.1;
         
@@ -61,7 +61,7 @@ function MouseFollower() {
     // Start animation
     animate();
 
-    // Add event listeners with passive option for better performance
+    // Add event listeners with passive option
     window.addEventListener('mousemove', handleMouseMove, { passive: true });
     window.addEventListener('mouseleave', handleMouseLeave);
 
@@ -82,14 +82,16 @@ function MouseFollower() {
         position: 'fixed',
         top: 0,
         left: 0,
-        width: '20px',
-        height: '20px',
+        width: '6px',
+        height: '6px',
         borderRadius: '50%',
         pointerEvents: 'none',
         opacity: 0,
-        transition: 'opacity 0.3s ease',
+        transition: 'opacity 0.2s ease',
         zIndex: 9999,
         willChange: 'transform',
+        background: '#00ff88',
+        boxShadow: '0 0 12px rgba(0, 255, 136, 0.6)',
       }}
     />
   );

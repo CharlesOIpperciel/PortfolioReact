@@ -1,44 +1,40 @@
 import React from 'react';
 import skills from '../data/skills';
-import Tooltip from './Tooltip';
 import "../styles/tailwind.css"
 
 const Skills = () => {
     return (
-        <section className="py-20 px-6 relative">
-            <div className="relative z-10 max-w-6xl mx-auto">
+        <section className="section-compact px-6 bg-primary">
+            <div className="max-w-5xl mx-auto">
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="gradient-text">Technical</span>
-                        <span className="text-white"> Skills</span>
+                <div className="section-header">
+                    <h2 className="section-title">
+                        <span className="gradient-text">TECHNICAL</span>
+                        <span className="text-accent"> SKILLS</span>
                     </h2>
-                    <p className="text-xl text-white/70 max-w-2xl mx-auto">
-                        Technologies and tools I use to bring ideas to life
+                    <p className="section-subtitle">
+                        Technologies and tools I currently use daily
                     </p>
                 </div>
 
                 {/* Skills Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div className="skills-grid">
                     {skills.map((skill, index) => (
-                        <Tooltip key={index} text={skill.description}>
-                            <div className="glass-dark rounded-2xl p-6 text-center card-hover cursor-pointer group">
-                                {/* Skill Icon */}
-                                <div className="relative mb-4">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-lg"></div>
-                                    <img 
-                                        src={skill.icons} 
-                                        alt={`${skill.skill} icon`} 
-                                        className="relative w-16 h-16 mx-auto object-contain filter drop-shadow-lg"
-                                    />
-                                </div>
-
-                                {/* Skill Name */}
-                                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-300 transition-colors duration-200">
-                                    {skill.skill}
-                                </h3>
+                        <div key={index} className={`card p-3 text-center cursor-pointer group card-hover animate-slideIn ${skill.isMain ? 'main-skill' : ''}`} style={{ animationDelay: `${index * 0.05}s` }}>
+                            {/* Skill Icon */}
+                            <div className="relative mb-2">
+                                <img 
+                                    src={skill.icons} 
+                                    alt={`${skill.skill} icon`} 
+                                    className={`w-10 h-10 mx-auto object-contain skill-icon ${skill.isMain ? 'main-skill-icon' : ''}`}
+                                />
                             </div>
-                        </Tooltip>
+
+                            {/* Skill Name */}
+                            <h3 className={`text-xs font-semibold text-accent group-hover:text-primary transition-colors duration-200 uppercase tracking-wide ${skill.isMain ? 'main-skill-text' : ''}`}>
+                                {skill.skill}
+                            </h3>
+                        </div>
                     ))}
                 </div>
             </div>

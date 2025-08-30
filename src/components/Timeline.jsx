@@ -2,48 +2,67 @@ import timeline from "../data/timeline";
 import TimelineItem from "./TimelineItem";
 
 function Timeline() {
+  // Separate current positions from others
+  const currentPositions = timeline.filter(item => item.current === true);
+  const otherPositions = timeline.filter(item => item.current !== true);
+
   return (
-    <section className="py-20 px-6 relative">
-      <div className="relative z-10 max-w-6xl mx-auto">
+    <section className="section-compact px-4 bg-accent">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Professional</span>
-            <span className="text-white"> Journey</span>
+        <div className="section-header">
+          <h2 className="section-title">
+            <span className="gradient-text">PROFESSIONAL</span>
+            <span className="text-accent"> JOURNEY</span>
           </h2>
-          <p className="text-xl text-white/70 max-w-2xl mx-auto">
+          <p className="section-subtitle">
             My career path and educational background
           </p>
         </div>
 
         {/* Timeline Container */}
         <div className="relative">
-          {/* Timeline Items */}
-          <div>
-            {timeline.map((item, index) => (
-              <div key={item.year} className="relative">
-                <TimelineItem
-                  year={item.year}
-                  type={item.type}
-                  title={item.title}
-                  company={item.company}
-                  duration={item.duration}
-                  details={item.details}
-                  current={item.current}
-                  index={index}
-                />
-                
-                {/* Upward Arrow (except for last item) */}
-                {index < timeline.length - 1 && (
-                  <div className="flex justify-center my-8">
-                    <div className="relative w-0.5 h-8 bg-gradient-to-b from-purple-500 to-pink-500">
-                      <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-purple-500"></div>
-                    </div>
+          {/* Current Positions - Side by Side */}
+          {currentPositions.length > 0 && (
+            <div className="mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {currentPositions.map((item, index) => (
+                  <div key={item.year + item.company} className="w-full h-full">
+                    <TimelineItem
+                      year={item.year}
+                      type={item.type}
+                      title={item.title}
+                      company={item.company}
+                      duration={item.duration}
+                      details={item.details}
+                      current={item.current}
+                      index={index}
+                    />
                   </div>
-                )}
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          )}
+
+          {/* Other Positions - Vertical Stack */}
+          {otherPositions.length > 0 && (
+            <div className="flex flex-col items-center">
+              {otherPositions.map((item, index) => (
+                <div key={item.year + item.company} className="relative w-full max-w-2xl mb-6">
+                  <TimelineItem
+                    year={item.year}
+                    type={item.type}
+                    title={item.title}
+                    company={item.company}
+                    duration={item.duration}
+                    details={item.details}
+                    current={item.current}
+                    index={index}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>

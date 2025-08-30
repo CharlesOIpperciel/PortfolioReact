@@ -16,9 +16,19 @@ export default [
     company: "A1 Imports",
     duration: "On-Going",
     details:
-      "Accepted a full-time position at A1 Imports under the A1 Arbitrage Division. In this role, I’ll be responsible for sourcing suppliers, negotiating contracts, ensuring timely deliveries, and making sales predictions to drive business growth. Also tasked with writing Python scripts to automate daily activities and enhance efficiency through data analysis.",
+      "Accepted a full-time position at A1 Imports under the A1 Arbitrage Division. In this role, I'll be responsible for sourcing suppliers, negotiating contracts, ensuring timely deliveries, and making sales predictions to drive business growth. Also tasked with writing Python scripts to automate daily activities and enhance efficiency through data analysis.",
     current: true,
     },  
+  {
+    year: "September 2025",
+    type: "Full-time 🎯",
+    title: "Customer Success Manager",
+    company: "Institut du E-Commerce",
+    duration: "On-Going",
+    details:
+      "Working as a Customer Success Manager at IEC, ensuring our students are well equipped and helped throughout their e-commerce learning experience. This role focuses on student support and success in their e-commerce education journey.",
+    current: true,
+  },
   {
     year: "Winter 2024",
     type: "Part-time 💻",

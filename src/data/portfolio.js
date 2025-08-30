@@ -27,11 +27,4 @@ export default [
         link: "https://github.com/CharlesOIpperciel/InsulinCalculator",
         isPrivate: false
     },
-    {
-        title: "Taskline",
-        imgUrl: "assets/taskline.png",
-        stack: ["React", "Firebase", "Tailwind CSS", "SP-API"],
-        link: "https://taskline-2a973.web.app/",
-        isPrivate: true
-    },
 ]
