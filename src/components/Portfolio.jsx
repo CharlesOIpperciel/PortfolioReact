@@ -27,6 +27,7 @@ function Portfolio() {
                      stack={project.stack}
                      link={project.link}
                      isPrivate={project.isPrivate}
+                     description={project.description}
                   />
                </div>
             ))}
