@@ -5,7 +5,7 @@ export default [
         stack: ["React", "Python", "MongoDB", "Electron"],
         link: "https://github.com/MEDomics-UdeS/MEDomicsLab",
         isPrivate: false,
-        description: "MEDomicsLab - Open-source platform for integrating AI into healthcare."
+        description: "Open-source platform for integrating AI into healthcare."
     },
     {
         title: "Vitopia - 2D AI Simulation",
@@ -13,7 +13,7 @@ export default [
         stack: ["C++", "OpenGL"],
         link: "https://github.com/CharlesOIpperciel/Vitopia",
         isPrivate: false,
-        description: "Vitopia - 2D AI Simulation made in C++ and compute shaders OpenGl."
+        description: "2D AI Simulation made in C++ and compute shaders OpenGl."
     },
     {
         title: "Coded Kingdom",
@@ -21,7 +21,7 @@ export default [
         stack: ["GDScript", "Python", "Godot"],
         link: "https://github.com/CharlesOIpperciel/CodedKingdom",
         isPrivate: false,
-        description: "Coded Kingdom - Game made in Godot where the player has to code to survive."
+        description: "Game made in Godot where the player has to code to survive."
     },
     {
         title: "Insulin Dosage Calculator",
@@ -29,7 +29,7 @@ export default [
         stack: ["Python"],
         link: "https://github.com/CharlesOIpperciel/InsulinCalculator",
         isPrivate: false,
-        description: "Insulin Dosage Calculator - Private Tool using Python to calculate the correct insulin dosage for a patient."
+        description: "Private Tool using Python to calculate the correct insulin dosage for a patient."
     },
     {
         title: "Taskline",
@@ -37,7 +37,7 @@ export default [
         stack: ["React", "SP-API", "Firebase", 'Make.com'],
         link: "#",
         isPrivate: true,
-        description: "Taskline - Private Tool using SP-API to better use the data from our seller central at work."
+        description: "Private Tool using SP-API to better use the data from our seller central at work."
     },
     {
         title: "Budgetly",
@@ -45,6 +45,14 @@ export default [
         stack: ["React", "Tailwind CSS", "Firebase"],
         link: "#",
         isPrivate: true,
-        description: "Budgetly - Private Tool using React and Tailwind CSS to manage my personal budget."
+        description: "Private Tool using React and Tailwind CSS to manage my personal budget."
+    },
+    {
+        title: "This Website",
+        imgUrl: "assets/react.svg",
+        stack: ["React", "Tailwind CSS", 'Vite', 'gh-pages'],
+        link: "https://github.com/CharlesOIpperciel/PortfolioReact",
+        isPrivate: false,
+        description: "My personal portfolio website built with React and Tailwind CSS showcasing my work and skills."
     },
 ]
