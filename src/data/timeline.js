@@ -16,7 +16,7 @@ export default [
     company: "A1 Imports",
     duration: "On-Going",
     details:
-      "Accepted a full-time position at A1 Imports under the A1 Arbitrage Division. In this role, I'll be responsible for sourcing suppliers, negotiating contracts, ensuring timely deliveries, and making sales predictions to drive business growth. Also tasked with writing Python scripts to automate daily activities and enhance efficiency through data analysis.",
+      "Accepted a full-time position at A1 Imports under the A1 Arbitrage Division. In this role, I’ll be responsible for sourcing suppliers, negotiating contracts, ensuring timely deliveries, and forecasting sales to drive business growth. I’m also developing a private tool, Taskline, leveraging the Amazon SP-API to unlock the full potential of our Seller Central data through data science.",
     current: true,
     },  
   {
