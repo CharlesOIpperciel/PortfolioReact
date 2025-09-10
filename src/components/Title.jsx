@@ -31,7 +31,7 @@ function Title() {
               onClick={() => scrollToSection('intro')}
               className="text-lg font-bold gradient-text hover:scale-105 transition-transform duration-200 uppercase tracking-wider"
             >
-              COI
+              Charles-Olivier Ipperciel
             </button>
           </div>
 

@@ -1,12 +1,12 @@
 export default [
   {
-    year: "Fall 2025",
+    year: "Fall 2026",
     type: "Education 🎓",
     title: "Master's Degree in Computer Science",
     company: "UdS",
-    duration: "Starting September 2025",
+    duration: "Starting September 2026",
     details:
-      "Pursuing a part-time Master's degree in Computer Science at UdS while working full-time for A1 Imports. It's a 45-credit, regular track course-based program.",
+      "Pursuing a part-time Master's degree in Computer Science at UdS while working full-time for A1 Import. It's a 45-credit, regular track course-based program.",
     current: "future",
   },
   {
@@ -33,7 +33,7 @@ export default [
     year: "Winter 2024",
     type: "Part-time 💻",
     title: "Full-stack Developer",
-    company: "UdS",
+    company: "MEDomicsLab",
     duration: "9 months",
     details:
       "Development of MEDomicsLab. Transitioned from a Summer 2024 internship into a part-time position. Still focusing on continuous improvement and updates to the application, alongside reviewing pull requests.",
@@ -43,7 +43,7 @@ export default [
     year: "Summer 2024",
     type: "Internship 🎒",
     title: "Full-stack Developer",
-    company: "UdS",
+    company: "MEDomicsLab",
     duration: "4 months",
     details:
       "Internship at MEDomicsLab, an open-source platform for integrating AI into healthcare. I enhanced the platform's scalability by implementing MongoDB, optimizing both backend (Python) and frontend (React) to handle larger healthcare datasets.",
@@ -63,7 +63,7 @@ export default [
     year: "Winter 2023",
     type: "Internship 🎒",
     title: "Full-stack Developer",
-    company: "Qwatro",
+    company: "Qwatro Inc.",
     duration: "4 months",
     details:
       "Internship at Qwatro inc. Developed an application to track on-site workers' hours and assisted in the necessary steps for acquiring an appropriate ERP system.",

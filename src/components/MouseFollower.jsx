@@ -48,8 +48,8 @@ function MouseFollower() {
       
       // Only update if movement is significant
       if (Math.abs(dx) > 1 || Math.abs(dy) > 1) {
-        followerX += dx * 0.1;
-        followerY += dy * 0.1;
+        followerX += dx * 0.05;
+        followerY += dy * 0.05;
         
         // Use transform3d for hardware acceleration
         follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) translate(-50%, -50%)`;
